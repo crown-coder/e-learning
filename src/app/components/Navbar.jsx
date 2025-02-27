@@ -29,7 +29,7 @@ export default function Navbar() {
             <ul className="hidden md:flex gap-5 items-center font-semibold text-sm">
                 {["Home", "About", "Courses", "Products", "Blogs", "My Courses"].map((item, index) => (
                     <li key={index}>
-                        <Link className="hover:text-indigo-700 transition" href={`/${item.toLowerCase().replace(" ", "-")}`}>
+                        <Link className="hover:text-indigo-700 transition duration-75" href={`/${item.toLowerCase().replace(" ", "-")}`}>
                             {item}
                         </Link>
                     </li>
